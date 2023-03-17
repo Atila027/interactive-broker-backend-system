@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route("/connectToBroker")
 def connectToBroker(self):
     self.host = "localhost"
-    self.port = 4001
+    self.port = 7497
     self.clientId = 0
     self.connect(self.host, self.port, self.clientId)
     return true
