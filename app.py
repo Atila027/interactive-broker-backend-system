@@ -6,14 +6,17 @@ from ibapi.common import TickerId
 
 app = Flask(__name__)
 
-def connect(self):
+@app.route("/connectToBroker")
+def connectToBroker(self):
     self.host = "localhost"
     self.port = 4001
     self.clientId = 0
     self.connect(self.host, self.port, self.clientId)
+    return true
 
 def disconnect(self):
     self.disconnect()
+
 
 def get_last_price(self, contract):
     self.reqMarketDataType(3)
