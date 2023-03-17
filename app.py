@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 def connect(self):
     self.host = "localhost"
-    self.port = 7497
+    self.port = 4001
     self.clientId = 0
     self.connect(self.host, self.port, self.clientId)
 
