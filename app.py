@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 from ibapi.client import EClient
 from ibapi.wrapper import EWrapper
 from ibapi.contract import Contract
@@ -12,7 +12,7 @@ def connectToBroker(self):
     self.port = 7497
     self.clientId = 0
     self.connect(self.host, self.port, self.clientId)
-    return "connected to broker"
+    return {connection:"true"}
 
 def disconnect(self):
     self.disconnect()
