@@ -6,7 +6,7 @@ from ibapi.common import TickerId
 
 app = Flask(__name__)
 
-@app.route("/connectToBroker" methods=['GET'])
+@app.route("/connectToBroker", methods=['GET'])
 def connectToBroker(self):
     self.host = "localhost"
     self.port = 7497
