@@ -6,13 +6,13 @@ from ibapi.common import TickerId
 
 app = Flask(__name__)
 
-@app.route("/connectToBroker", methods=['GET'])
+@app.route("/connectToBroker", methods=["GET"], strict_slashes=False)
 def connectToBroker(self):
-    self.host = "localhost"
-    self.port = 7497
-    self.clientId = 0
-    self.connect(self.host, self.port, self.clientId)
-    return {connection:"true"}
+    # self.host = "localhost"
+    # self.port = 7497
+    # self.clientId = 0
+    # self.connect(self.host, self.port, self.clientId)
+    return {connection:"dfasdfasdf"}
 
 def disconnect(self):
     self.disconnect()
